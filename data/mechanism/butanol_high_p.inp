@@ -1,0 +1,712 @@
+ELEMENTS
+	H
+	D /2.014/
+	T /3.016/
+	C
+	CI /13.003/
+	O
+	OI /18.000/
+	N
+	Ne
+	Ar
+	He
+	Si
+	S
+	F
+	Cl
+	Br
+	I
+	X /195.083/
+END
+
+SPECIES
+    bR                        ! bR
+    gQOOH[O]                  ! gQOOH[O]
+    ipropyl                   ! ipropyl
+    aadduct                   ! aadduct
+    galdol                    ! galdol
+    ibut_peroxyacid           ! ibut_peroxyacid
+    bQOOHa                    ! bQOOHa
+    ibutanal              ! ibutanal
+    aOOHbalkene               ! aOOHbalkene
+    HO2                       ! HO2
+    disub_epoxy               ! disub_epoxy
+    ibutenol                  ! ibutenol
+    CH2O                      ! CH2O
+    balkoxyketone             ! balkoxyketone
+    acetone                   ! acetone
+    disub_c4ether             ! disub_c4ether
+    O2                        ! O2
+    aQOOH[O]                  ! aQOOH[O]
+    H                         ! H
+    bQOOH[O]                  ! bQOOH[O]
+    CH3                       ! CH3
+    gQOOHa                    ! gQOOHa
+    gRO2                      ! gRO2
+    propene1ol                ! propene1ol
+    ipropylOOH                ! ipropylOOH
+    aQOOHb                    ! aQOOHb
+    aR                        ! aR
+    OH                        ! OH
+    aRO2                      ! aRO2
+    propene                   ! propene
+    galdoxy                   ! galdoxy
+    aQOOHg                    ! aQOOHg
+    galkene                   ! galkene
+    H2O                       ! H2O
+    bQOOHg                    ! bQOOHg
+    gQOOHg                    ! gQOOHg
+    gQOOHb                    ! gQOOHb
+    formic_acid               ! formic_acid
+    performic_acid            ! performic_acid
+    bRO2                      ! bRO2
+    propene3ol                ! propene3ol
+    monosub_c4ether           ! monosub_c4ether
+    gR                        ! gR
+    trisub_epoxy              ! trisub_epoxy
+    ! for atmopsheric chemistry
+
+NO
+NO2
+[O]CC(CO)C
+OOCC(CO)C
+NO2OCC(CO)C ![O-][N+](=O)OCC(CO)C
+OOCC(C(O[O])O)C
+OCC(O[O])(COO)C
+OOCC(C=O)C
+O=CC(C)C=O
+OOCC(CO)CO[O]
+
+!KHP
+O=CC(C)C(OO)O
+O=CC(CO)COO
+OCC(OO)(C=O)C
+
+! super high-T decomposition
+[CH2]O
+OCC=C
+
+N2
+END
+
+
+
+THERM ALL
+   300.000  1000.000  5000.000
+N2                      N   2               G   200.000  6000.000 1000.        1
+ 2.95257637E+00 1.39690040E-03-4.92631603E-07 7.86010195E-11-4.60755204E-15    2
+-9.23948688E+02 5.87188762E+00 3.53100528E+00-1.23660988E-04-5.02999433E-07    3
+ 2.43530612E-09-1.40881235E-12-1.04697628E+03 2.96747038E+00                   4
+
+bR                      C   4H   9O   1     G    10.000  3000.000  483.44      1
+ 2.33412772E+00 4.22098516E-02-2.28033039E-05 6.04629171E-09-6.30260304E-13    2
+-1.33722798E+04 1.83781633E+01 3.38169281E+00 5.97090459E-02-1.58287430E-04    3
+ 3.04837328E-07-2.13038808E-10-1.37793484E+04 1.09231282E+01                   4
+
+gQOOH[O]                C   4H   9O   3     G    10.000  3000.000  535.30      1
+-4.21755844E-01 7.69906504E-02-5.57396763E-05 1.81419905E-08-2.18344813E-12    2
+-1.91590274E+04 2.72795173E+01 3.83107541E+00 1.02291567E-02 2.29363505E-04    3
+-4.59009990E-07 2.77675462E-10-1.91131298E+04 1.41013114E+01                   4
+
+ipropyl                 C   3H   7          G    10.000  3000.000  421.76      1
+-4.74539857E-01 3.20862214E-02-1.67340185E-05 4.21362062E-09-4.13150506E-13    2
+ 9.60468548E+03 2.85866915E+01 3.73942383E+00 3.10087642E-02-1.51210955E-04    3
+ 4.35404300E-07-3.85597114E-10 8.90336243E+03 7.79442873E+00                   4
+
+aadduct                 C   4H   9O   3     G    10.000  3000.000  449.87      1
+ 4.11177358E+00 5.17059489E-02-2.97525262E-05 8.33275838E-09-9.09586758E-13    2
+-3.15654161E+04 1.39532387E+01 3.06974502E+00 9.19894041E-02-2.67494769E-04    3
+ 5.13913683E-07-3.67043623E-10-3.17855364E+04 1.46595218E+01                   4
+
+galdol                  C   4H   8O   2     G    10.000  3000.000  506.84      1
+ 1.49452820E+00 5.66136846E-02-3.87875835E-05 1.23745535E-08-1.48368637E-12    2
+-4.70336670E+04 1.85602156E+01 3.85382425E+00 9.20968664E-03 1.86692039E-04    3
+-3.96256203E-07 2.55342018E-10-4.69031046E+04 1.24285414E+01                   4
+
+ibut_peroxyacid         C   4H   8O   3     G    10.000  3000.000 1375.24      1
+ 1.22658519E+01 3.06061925E-02-1.41155260E-05 3.13186499E-09-2.72772128E-13    2
+-5.24436780E+04-3.56666845E+01 3.51030350E+00 4.78206893E-02-2.38914319E-05    3
+ 3.50789742E-09 4.51994100E-13-4.92551563E+04 1.22005828E+01                   4
+
+bQOOHa                  C   4H   9O   3     G    10.000  3000.000  390.81      1
+ 5.33382850E+00 5.65042688E-02-3.83311610E-05 1.23023505E-08-1.49588694E-12    2
+-2.81140638E+04 2.59452782E+00 3.54980962E+00 3.76388045E-02 1.76570846E-04    3
+-5.97362491E-07 5.43997308E-10-2.76911099E+04 1.31524667E+01                   4
+
+ibutanal                C   4H   8O   1     G    10.000  3000.000  685.76      1
+ 1.29252502E+00 4.14739319E-02-2.27342291E-05 6.08333519E-09-6.38592746E-13    2
+-2.75012303E+04 2.16372483E+01 3.57156869E+00 3.36554936E-02-1.76084556E-05    3
+ 1.27427021E-08-7.31065669E-12-2.79425441E+04 1.05632453E+01                   4
+
+aOOHbalkene             C   3H   6O   3     G    10.000  3000.000  497.39      1
+ 6.20904500E+00 4.08852230E-02-2.89917842E-05 9.60352888E-09-1.19344102E-12    2
+-3.24251925E+04-4.72908199E+00 3.76688159E+00 1.51445222E-02 1.85493947E-04    3
+-4.61316793E-07 3.27704551E-10-3.16209111E+04 1.09902894E+01                   4
+
+HO2                     H   1O   2          G    10.000  3000.000  891.12      1
+ 3.06572872E+00 4.28499954E-03-2.19321309E-06 5.58865469E-10-5.61223936E-14    2
+ 6.48873715E+02 8.84554214E+00 4.02886989E+00-1.75768394E-03 1.08725202E-05    3
+-1.13811513E-08 3.90105448E-12 5.45486862E+02 4.69301700E+00                   4
+
+disub_epoxy             C   4H   8O   2     G    10.000  3000.000  549.38      1
+-6.43656886E-01 6.06147022E-02-4.13650206E-05 1.31653588E-08-1.57830433E-12    2
+-3.70961337E+04 2.76126165E+01 3.89874809E+00 5.96916850E-03 1.66737245E-04    3
+-3.10840084E-07 1.78388733E-10-3.72696855E+04 1.13817628E+01                   4
+
+ibutenol                C   4H   8O   1     G    10.000  3000.000  137.25      1
+ 3.31927555E+00 3.69451989E-02-1.90517221E-05 4.76044872E-09-4.63798183E-13    2
+-2.45092386E+04 9.65583654E+00 3.95628512E+00 5.80281587E-03 4.58762835E-04    3
+-2.98383687E-06 6.65948013E-09-2.45148783E+04 8.27926340E+00                   4
+
+CH2O                    C   1H   2O   1     G    10.000  3000.000  601.31      1
+ 1.40133365E+00 9.48860702E-03-4.43090724E-06 9.48460921E-10-7.43801447E-14    2
+-1.39875246E+04 1.57424189E+01 4.03190867E+00-1.93234440E-03 8.89750134E-06    3
+ 2.98091729E-09-7.90803598E-12-1.44137663E+04 3.47574646E+00                   4
+
+balkoxyketone           C   4H   7O   2     G    10.000  3000.000  269.88      1
+ 3.57529044E+00 4.28874819E-02-2.65397001E-05 7.99683399E-09-9.33016075E-13    2
+-2.12814131E+04 1.13972383E+01 3.81932931E+00 1.68517713E-02 2.42768548E-04    3
+-9.65044669E-07 1.18554067E-09-2.12129400E+04 1.20521353E+01                   4
+
+acetone                 C   3H   6O   1     G    10.000  3000.000  414.35      1
+ 1.70006055E-01 3.28431500E-02-1.80960141E-05 4.82960688E-09-5.02388504E-13    2
+-2.74555048E+04 2.56372815E+01 3.73496189E+00 3.05743042E-02-1.26253618E-04    3
+ 3.66081246E-07-3.31430754E-10-2.80268883E+04 8.24935670E+00                   4
+
+disub_c4ether           C   4H   8O   2     G    10.000  3000.000  413.94      1
+ 4.27599359E-01 5.13892048E-02-3.11324980E-05 9.11613186E-09-1.03207474E-12    2
+-3.98163403E+04 2.42233721E+01 3.78224823E+00 1.89725383E-02 8.63358621E-05    3
+-1.80070715E-07 1.13227405E-10-4.00940658E+04 1.09980355E+01                   4
+
+O2                      O   2               G    10.000  3000.000  605.97      1
+ 2.87460687E+00 2.17846902E-03-1.18268559E-06 2.86932732E-10-2.53328004E-14    2
+-7.38997116E+02 7.69342880E+00 3.50743568E+00-4.43890613E-04 1.45963698E-06    3
+ 1.61440628E-09-2.31995121E-12-8.44241134E+02 4.72183265E+00                   4
+
+aQOOH[O]                C   4H   9O   3     G    10.000  3000.000  488.28      1
+ 3.94135702E+00 5.71969109E-02-3.72560591E-05 1.15227200E-08-1.35833906E-12    2
+-2.42746846E+04 9.21912720E+00 3.54577543E+00 3.89355611E-02 8.48983405E-05    3
+-2.45448663E-07 1.76389312E-10-2.39797363E+04 1.34687215E+01                   4
+
+H                       H   1               G    10.000  3000.000  794.01      1
+ 2.50000000E+00 1.52667235E-14-1.58445285E-17 6.63088600E-21-9.62111674E-25    2
+ 2.54725545E+04-4.61279342E-01 2.50000000E+00 1.99051163E-15-1.19089508E-17    3
+ 2.10805655E-20-1.11017699E-23 2.54725545E+04-4.61279342E-01                   4
+
+bQOOH[O]                C   4H   9O   3     G    10.000  3000.000  339.99      1
+ 5.01791765E+00 5.47100545E-02-3.57795368E-05 1.12690260E-08-1.35800609E-12    2
+-2.29821515E+04 3.86230724E+00 3.60932792E+00 3.38338703E-02 2.21539729E-04    3
+-8.17250909E-07 8.46073533E-10-2.26699287E+04 1.23213319E+01                   4
+
+CH3                     C   1H   3          G    10.000  3000.000  616.74      1
+ 3.35929262E+00 4.63113698E-03-9.24327408E-07-9.02678529E-11 3.56929147E-14    2
+ 1.65278176E+04 2.95738578E+00 3.98929999E+00 5.45134450E-04 9.01330447E-06    3
+-1.08322558E-08 4.38998626E-12 1.64501065E+04 2.22444803E-01                   4
+
+gQOOHa                  C   4H   9O   3     G    10.000  3000.000  160.04      1
+ 2.89828188E+00 6.50595016E-02-4.60468485E-05 1.51498883E-08-1.87317461E-12    2
+-2.56487739E+04 1.37045813E+01 3.80949756E+00 2.29751711E-02 5.29370728E-04    3
+-3.13567157E-06 6.09760181E-09-2.56532104E+04 1.17507348E+01                   4
+
+gRO2                    C   4H   9O   3     G    10.000  3000.000  177.34      1
+ 4.82088182E+00 5.17167579E-02-3.18374350E-05 9.52198307E-09-1.10173677E-12    2
+-2.91676989E+04 7.14005418E+00 3.70630300E+00 3.49748205E-02 4.64012461E-04    3
+-3.18615287E-06 6.38111134E-09-2.90623071E+04 1.24462383E+01                   4
+
+propene1ol              C   3H   6O   1     G    10.000  3000.000  458.95      1
+ 3.13949923E+00 2.95532493E-02-1.73804502E-05 5.11301616E-09-5.92636218E-13    2
+-2.01278826E+04 9.32980900E+00 3.91249573E+00 5.85890852E-03 1.15482230E-04    3
+-2.68387071E-07 1.92241456E-10-2.00202458E+04 8.14820366E+00                   4
+
+ipropylOOH              C   3H   7O   2     G    10.000  3000.000  405.00      1
+ 2.51750759E+00 3.72755925E-02-2.12443891E-05 5.83565024E-09-6.22067019E-13    2
+-8.83455846E+01 2.20988406E+01 3.30064443E+00 7.58805779E-02-3.35852557E-04    3
+ 8.06219583E-07-6.69073667E-10-5.31826585E+02 1.43365961E+01                   4
+
+aQOOHb                  C   4H   9O   3     G    10.000  3000.000  412.76      1
+ 4.17937215E+00 5.26210760E-02-3.24036963E-05 9.59534806E-09-1.09484015E-12    2
+-2.92924621E+04 1.35867014E+01 3.15528710E+00 8.54758644E-02-2.35129667E-04    3
+ 4.71612528E-07-3.62442659E-10-2.94032609E+04 1.52548904E+01                   4
+
+aR                      C   4H   9O   1     G    10.000  3000.000  447.66      1
+ 2.49587809E+00 4.35751470E-02-2.44968882E-05 6.73507394E-09-7.23840051E-13    2
+-1.44023759E+04 1.62588544E+01 3.59881606E+00 3.37198977E-02 8.52602708E-06    3
+-4.24440387E-08 2.67410100E-11-1.45011231E+04 1.18242832E+01                   4
+
+OH                      H   1O   1          G    10.000  3000.000  984.11      1
+ 3.45225060E+00-2.95208580E-04 7.39489506E-07-2.89334999E-10 3.53073500E-14    2
+ 3.42731562E+03 1.85795051E+00 3.49686224E+00 1.83979403E-04-9.97670388E-07    3
+ 1.56949017E-09-6.10160326E-13 3.38655052E+03 1.48093472E+00                   4
+
+aRO2                    C   4H   9O   3     G    10.000  3000.000  669.94      1
+ 5.03713640E+00 5.20083081E-02-3.16596216E-05 9.23272858E-09-1.03663033E-12    2
+-3.48128695E+04 4.58129661E+00 3.45423906E+00 4.74582017E-02 9.87704978E-06    3
+-6.32972051E-08 3.76707813E-11-3.42865865E+04 1.39287605E+01                   4
+
+propene                 C   3H   6          G    10.000  3000.000  519.54      1
+ 3.79937178E-01 2.82454142E-02-1.50104057E-05 3.90875240E-09-4.00495156E-13    2
+ 1.08585678E+03 2.20218012E+01 3.98723142E+00 4.72523834E-04 6.51743589E-05    3
+-9.89828947E-08 4.91102712E-11 7.11028764E+02 6.98077703E+00                   4
+
+galdoxy                 C   4H   7O   2     G    10.000  3000.000  209.61      1
+ 4.22067537E+00 4.03365165E-02-2.36124725E-05 6.72959774E-09-7.47834371E-13    2
+-1.90772193E+04 8.97112010E+00 3.82639342E+00 1.84781807E-02 3.43083834E-04    3
+-1.82836387E-06 2.98567551E-09-1.89961453E+04 1.17969120E+01                   4
+
+aQOOHg                  C   4H   9O   3     G    10.000  3000.000  456.11      1
+ 5.13925974E+00 5.96589247E-02-4.14790668E-05 1.34339440E-08-1.63654325E-12    2
+-2.70954802E+04 1.44578657E+00 3.62740306E+00 2.81005051E-02 2.09695584E-04    3
+-5.69120927E-07 4.35749047E-10-2.64913858E+04 1.26631674E+01                   4
+
+galkene                 C   4H   8O   1     G    10.000  3000.000  384.64      1
+ 4.01368068E+00 3.78895237E-02-2.15386548E-05 6.15227174E-09-6.97686392E-13    2
+-2.21621713E+04 6.92451826E+00 3.84014603E+00 1.20321048E-02 1.87176569E-04    3
+-5.42578257E-07 4.77486889E-10-2.19441993E+04 1.02558714E+01                   4
+
+H2O                     H   2O   1          G    10.000  3000.000  773.86      1
+ 3.52130664E+00 1.05383750E-03 6.40661181E-07-3.86217172E-10 5.49212286E-14    2
+-3.03029099E+04 2.34186951E+00 4.00473579E+00-2.39743726E-04 8.11957159E-07    3
+ 1.47871441E-09-1.19770350E-12-3.04138189E+04-9.96295901E-02                   4
+
+bQOOHg                  C   4H   9O   3     G    10.000  3000.000  441.11      1
+ 6.09006156E+00 5.80528396E-02-4.06403144E-05 1.32577844E-08-1.62505939E-12    2
+-2.51122179E+04-1.97745650E+00 3.56600015E+00 3.36028081E-02 2.03480289E-04    3
+-5.98988679E-07 4.83259237E-10-2.44290004E+04 1.33541282E+01                   4
+
+gQOOHg                  C   4H   9O   3     G    10.000  3000.000  475.31      1
+ 5.94359969E+00 5.53682832E-02-3.71608727E-05 1.17498987E-08-1.40752361E-12    2
+-2.21280209E+04 6.93499595E-01 3.42228898E+00 4.98775163E-02 6.44567238E-05    3
+-2.49002941E-07 1.97924537E-10-2.15866371E+04 1.41558026E+01                   4
+
+gQOOHb                  C   4H   9O   3     G    10.000  3000.000 1018.64      1
+ 1.38293487E+01 3.88545029E-02-2.19487610E-05 5.78767504E-09-5.85158126E-13    2
+-2.80171371E+04-4.44084518E+01 3.99015092E+00 4.29693952E-02 2.28263761E-05    3
+-5.67854223E-08 2.29368948E-11-2.42215664E+04 1.20330446E+01                   4
+
+formic_acid             C   1H   2O   2     G    10.000  3000.000  741.26      1
+ 1.13645536E+00 1.74946996E-02-1.08104427E-05 3.08043019E-09-3.34850911E-13    2
+-4.65303013E+04 1.86152776E+01 4.06854200E+00-4.74509279E-03 4.71800771E-05    3
+-6.07540563E-08 2.51332687E-11-4.67886747E+04 6.53681669E+00                   4
+
+performic_acid          C   1H   2O   3     G    10.000  3000.000  590.81      1
+ 4.39687777E+00 1.85503940E-02-1.36095396E-05 4.62645227E-09-5.88947965E-13    2
+-3.66838206E+04 3.45870971E+00 3.92643406E+00 4.24056152E-03 6.71398448E-05    3
+-1.36612918E-07 8.03856533E-11-3.63229016E+04 8.06477304E+00                   4
+
+bRO2                    C   4H   9O   3     G    10.000  3000.000  461.08      1
+ 3.46987170E+00 6.00581490E-02-4.00643853E-05 1.25696298E-08-1.49544038E-12    2
+-3.32445338E+04 9.78960022E+00 3.53990056E+00 3.88527438E-02 9.59311645E-05    3
+-2.80951053E-07 2.10185662E-10-3.30320407E+04 1.18802889E+01                   4
+
+propene3ol              C   3H   6O   1     G    10.000  3000.000  444.68      1
+ 2.61656334E+00 3.01789272E-02-1.76519151E-05 5.14884692E-09-5.91173009E-13    2
+-1.71352507E+04 1.36719525E+01 3.92773181E+00 4.89826911E-03 1.13116720E-04    3
+-2.59100188E-07 1.86311624E-10-1.71185181E+04 9.90819029E+00                   4
+
+monosub_c4ether         C   4H   8O   2     G    10.000  3000.000  380.35      1
+-1.09396052E+00 5.35994728E-02-3.21085985E-05 9.20825312E-09-1.01830209E-12    2
+-3.25277635E+04 3.35339334E+01 3.47736074E+00 6.08154459E-02-2.78622357E-04    3
+ 8.23498447E-07-7.87467524E-10-3.32754336E+04 1.06414493E+01                   4
+
+gR                      C   4H   9O   1     G    10.000  3000.000  638.04      1
+ 3.99361174E+00 4.06342649E-02-2.23961542E-05 6.08470063E-09-6.50038223E-13    2
+-1.16148619E+04 9.85924303E+00 3.37091087E+00 5.17481918E-02-6.54748132E-05    3
+ 6.88068367E-08-3.21655491E-11-1.16821615E+04 1.14335135E+01                   4
+
+trisub_epoxy            C   4H   8O   2     G    10.000  3000.000  209.19      1
+ 2.64164774E+00 4.50012930E-02-2.57368138E-05 7.15297169E-09-7.73027370E-13    2
+-4.11265842E+04 1.48970735E+01 3.75298385E+00 2.37512691E-02 1.26635017E-04    3
+-4.78434454E-07 5.79538831E-10-4.11730808E+04 1.12742052E+01                   4
+
+! these came from rmg libraries or group additivity
+
+! GRI-Mech3.0-N
+NO                      O   1N   1          G   100.000  5000.000 1362.53      1
+ 3.33324812E+00 1.21025044E-03-5.06476207E-07 9.34767158E-11-6.39599359E-15    2
+ 9.85440467E+03 5.87671981E+00 3.92009885E+00-2.42938422E-03 5.61057627E-06    3
+-3.93200453E-09 9.21652641E-13 9.87241068E+03 3.51689271E+00                   4
+
+! GRI-Mech3.0-N
+NO2                     O   2N   1          G   100.000  5000.000 1037.20      1
+ 4.87884663E+00 2.21045747E-03-9.08107040E-07 2.02795082E-10-1.67145448E-14    2
+ 2.32365260E+03-8.97556031E-02 3.95231078E+00-1.18804196E-03 1.40893018E-05    3
+-1.59174572E-08 5.43084104E-12 2.89085688E+03 6.22185387E+00                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(CsCsCsR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) +
+! group(Cs-CsOsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsRR)R))
+! + other(R) + group(Os-CsH) + gauche(Os(Cs(CsRR)R)) + other(R) + radical(CCOJ)
+[O]CC(CO)C              H   9C   4O   2     G   100.000  5000.000 1542.72      1
+ 1.45610382E+01 2.30865538E-02-8.32395343E-06 1.40532676E-09-9.08819861E-14    2
+-3.42211187E+04-4.55454823E+01 4.45330187E+00 3.99759293E-02-1.56854485E-05    3
+ 6.71245165E-10 6.62552025E-13-2.99935824E+04 1.11945190E+01                   4
+ 
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(CsCsCsR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) +
+! group(Cs-CsOsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Os-OsCs) +
+! gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-OsH) + gauche(Os(RR)) + other(R)
+OOCC(CO)C               H  10C   4O   3     G   100.000  5000.000 1416.39      1
+ 1.57970489E+01 2.90516750E-02-1.14402840E-05 2.08884285E-09-1.44470197E-13    2
+-5.22238988E+04-5.02987546E+01 2.05515339E+00 6.78598808E-02-5.25393314E-05    3
+ 2.14333393E-08-3.55886997E-12-4.83311202E+04 2.07816646E+01                   4
+ 
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(CsCsCsR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) +
+! group(Cs-CsOsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(N5d-OdOsOs) + other(R) + group
+! (Os-Cs(N5dOdOs)) + gauche(Os(RR)) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-N) + gauche(Os(RR)) + other(R) + group(Od-
+! N5d) + other(R)
+NO2OCC(CO)C             H   9C   4O   4N   1G   100.000  5000.000 1409.24      1
+ 2.18246513E+01 2.48197709E-02-9.51176839E-06 1.69110421E-09-1.14053377E-13    2
+-5.36315503E+04-8.12063402E+01 3.17406484E+00 6.81094964E-02-4.53198389E-05    3
+ 1.37725080E-08-1.39544316E-12-4.74168677E+04 1.85692339E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(CsCsCsR)) + other(R) + group(Cs-CsOsOsH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) +
+! group(Cs-CsOsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Os-OsCs) +
+! gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-OsCs) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-
+! OsH) + gauche(Os(RR)) + other(R) + group(Os-OsH) + gauche(Os(RR)) + other(R) + radical(ROOJ)
+OOCC(C(O[O])O)C         H   9C   4O   5     G   100.000  5000.000  847.47      1
+ 1.15725054E+01 4.43518417E-02-2.10038457E-05 3.96688123E-09-2.71729898E-13    2
+-4.72109668E+04-2.03192712E+01-7.18509807E-01 1.07460611E-01-1.41724501E-04    3
+ 1.06027800E-07-3.24723553E-11-4.53107145E+04 3.58639250E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsOs) + gauche(Cs(CsCsCsR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) +
+! group(Cs-CsOsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Os-OsCs) +
+! gauche(Os(Cs(CsCsCs)R)) + other(R) + group(Os-OsCs) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-
+! OsH) + gauche(Os(RR)) + other(R) + group(Os-OsH) + gauche(Os(RR)) + other(R) + radical(C3COOJ)
+OCC(O[O])(COO)C         H   9C   4O   5     G   100.000  5000.000  788.05      1
+ 1.45128864E+01 3.86479159E-02-1.75655619E-05 3.36803486E-09-2.37086822E-13    2
+-4.69438970E+04-3.63691030E+01-7.10857240E-01 1.15923882E-01-1.64660825E-04    3
+ 1.27811019E-07-3.97167475E-11-4.45445754E+04 3.34498720E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Od)CsCsH) + gauche(Cs(CsCsRR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) +
+! group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cds-OdCsH) + other(R) + group(Os-OsCs) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-OsH)
+! + gauche(Os(RR)) + other(R) + group(Od-Cd) + other(R)
+! very similar to CurranPentane library
+OOCC(C=O)C              H   8C   4O   3     G   100.000  5000.000 1511.64      1
+ 1.44973690E+01 2.61550016E-02-1.07152390E-05 1.99574415E-09-1.39373461E-13    2
+-4.22322697E+04-4.36855217E+01 2.87352485E+00 5.69132849E-02-4.12367250E-05    3
+ 1.54564161E-08-2.36554728E-12-3.87180618E+04 1.71957045E+01                   4
+ 
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(CsRRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(CsRRR)) + other(R) + group(Cds-
+! OdCsH) + other(R) + group(Cds-OdCsH) + other(R) + group(Od-Cd) + other(R) + group(Od-Cd) + other(R)
+O=CC(C)C=O              H   6C   4O   2     G   100.000  5000.000 1063.44      1
+ 9.37717995E+00 2.34747726E-02-9.68862206E-06 1.83052377E-09-1.29827413E-13    2
+-4.04327996E+04-1.89584556E+01 3.25820402E+00 2.61593995E-02 1.52023607E-05    3
+-3.17516461E-08 1.19913158E-11-3.79817472E+04 1.63436547E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(CsCsCsR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) +
+! group(Cs-CsOsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Os-OsCs) +
+! gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-OsCs) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-
+! OsH) + gauche(Os(RR)) + other(R) + group(Os-OsH) + gauche(Os(RR)) + other(R) + radical(ROOJ)
+OOCC(CO)CO[O]           H   9C   4O   5     G   100.000  5000.000  789.28      1
+ 1.29647807E+01 4.05248417E-02-1.85507809E-05 3.68909491E-09-2.69815700E-13    2
+-4.25679926E+04-2.63505986E+01 3.88045914E-01 1.04262417E-01-1.39681541E-04    3
+ 1.06002098E-07-3.26767900E-11-4.05826738E+04 3.13488283E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Od)CsCsH) + gauche(Cs(CsCsRR)) + other(R) + group(Cs-CsOsOsH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) +
+! group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cds-OdCsH) + other(R) + group(Os-OsCs) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-CsH)
+! + gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-OsH) + gauche(Os(RR)) + other(R) + group(Od-Cd) + other(R)
+O=CC(C)C(OO)O           H   8C   4O   4     G   100.000  5000.000 1103.40      1
+ 1.31066696E+01 3.30896454E-02-1.51009791E-05 3.00728403E-09-2.19980875E-13    2
+-6.52387117E+04-3.18805454E+01 1.58464744E+00 7.48590148E-02-7.18839876E-05    3
+ 3.73153597E-08-7.99328372E-12-6.26960447E+04 2.48402177E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Od)CsCsH) + gauche(Cs(CsCsRR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) +
+! group(Cs-CsOsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cds-OdCsH) + other(R) + group(Os-OsCs) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-
+! CsH) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-OsH) + gauche(Os(RR)) + other(R) + group(Od-Cd) + other(R)
+O=CC(CO)COO             H   8C   4O   4     G   100.000  5000.000 1079.26      1
+ 1.32379842E+01 3.18705561E-02-1.39196212E-05 2.74601603E-09-2.01372657E-13    2
+-6.02132070E+04-3.11843087E+01 2.98087596E+00 6.98857574E-02-6.67545244E-05    3
+ 3.53823990E-08-7.76124378E-12-5.79991817E+04 1.90827136E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Od)CsCsOs) + gauche(Cs(CsCsRR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) +
+! group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cds-OdCsH) + other(R) + group(Os-OsCs) + gauche(Os(Cs(CsCsR)R)) + other(R) + group(Os-
+! CsH) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-OsH) + gauche(Os(RR)) + other(R) + group(Od-Cd) + other(R)
+OCC(OO)(C=O)C           H   8C   4O   4     G   100.000  5000.000  989.05      1
+ 1.51108303E+01 2.96986950E-02-1.29334072E-05 2.49806392E-09-1.79254367E-13    2
+-6.23957999E+04-4.38956002E+01 4.23537448E-01 8.90979588E-02-1.03018232E-04    3
+ 6.32191728E-08-1.55275098E-11-5.94904902E+04 2.68004675E+01                   4
+ 
+! from Sarathy butanol mechanism
+[CH2]O                  C   1H   3O   1     G   200.000  6000.00  1000.00      1
+ 5.09314370e+00 5.94761260e-03-2.06497460e-06 3.23008173e-10-1.88125902e-14    2
+-4.03409640e+03-1.84691493e+00 4.47834367e+00-1.35070310e-03 2.78484980e-05    3
+-3.64869060e-08 1.47907450e-11-3.50072890e+03 3.30913500e+00-2.04462770e+03    4
+
+OCC=C                   C   3H   6O   1     G   200.000  6000.00  1000.00      1
+ 8.72477114e+00 1.63942712e-02-5.90852993e-06 9.53262253e-10-5.70318010e-14    2
+-1.90496618e+04-1.97198674e+01 3.15011905e+00 1.28538274e-02 4.28438434e-05    3
+-6.67818707e-08 2.80408237e-11-1.66413668e+04 1.35066359e+01-1.48710589e+04    4
+
+END
+
+
+REACTIONS KCAL/MOLE MOLES
+! atkinson 1997 with C5 compound
+NO + gRO2 <=> NO2 + [O]CC(CO)C        1.000e+00 0.000     0.000    
+    PLOG/ 0.009869  1.643e+12 -0.001    -0.712   /
+    PLOG/ 0.098692  1.890e+12 -0.019    -0.683   /
+    PLOG/ 0.986923  3.667e+12 -0.106    -0.556   /
+    PLOG/ 9.869233  1.094e+13 -0.249    -0.347   /
+    PLOG/ 98.692327 2.687e+13 -0.367    -0.181   /
+
+! ho2 abstraction of peroxy radicals
+! atkinson 1997 for neopentyl
+HO2 + gRO2 <=> O2 + OOCC(CO)C               1.1144e11     0.000    -2.583
+
+! atkinson 1997 with C5 compound
+NO+gRO2=NO2OCC(CO)C                                  1.000e+00 0.000     0.000    
+    PLOG/ 0.009869  1.622e+35 -8.932    4.135    /
+    PLOG/ 0.098692  4.838e+38 -10.076   3.882    /
+    PLOG/ 0.986923  9.025e+38 -10.224   2.967    /
+    PLOG/ 9.869233  7.746e+37 -9.930    2.088    /
+    PLOG/ 98.692327 1.516e+37 -9.723    1.677    /
+
+! add O2 addition reactions to QOOH isomers
+! from Miyoshi 2011 for primary secondary and tertiary carbons
+ O2 + gQOOHa <=> OOCC(C(O[O])O)C       3.48674e+14 0.816 -0.5346
+ O2 + gQOOHg <=> OOCC(CO)CO[O]          6.87e+16 1.627 0.198
+ O2 + gQOOHb <=> OCC(O[O])(COO)C        9.76e+11 0.325 -0.4158
+
+! decomposition of KHP pathway
+! isomerization OOQOOH estimated from reaction R21 of Yao et al. JPCA 2017, 121 (16), 3001. doi:10.1021/acs.jpca.6b10818
+ OOCC(C(O[O])O)C <=> OH + O=CC(C)C(OO)O           6.3e3 2.58 14.1    ! R21
+ OOCC(CO)CO[O] <=> OH + O=CC(CO)COO               6.3e3 2.58 14.1    ! R21
+ OCC(O[O])(COO)C <=> OH + OCC(OO)(C=O)C           4.46e-11 6.91 16.6 ! R12
+
+! hydrogen abstractions to form carbonyl compounds
+! from atkinson 1997 for primary alkoxy radical reaction with O2
+ O2 + gQOOH[O] <=> HO2 + OOCC(C=O)C                   3.6e+10 0.000 1.084
+ O2 + galdoxy <=> HO2 + O=CC(C)C=O                   3.6e+10 0.000 1.084
+ O2 + [O]CC(CO)C <=> HO2 + galdol                     3.6e+10 0.000 1.084
+
+! gamma-i-butanol decomposition
+! taken from Sarathy butanol mechanism
+[CH2]O+propene<=>gR 9.45e+02 2.67 6.85 !ref henry ch3 addition to c3h6 to produce ic4h9 ;half the value of pre-exponential factor of methyl addition to propene
+CH3+OCC=C<=>gR 1.89e+03 2.67 6.85 !ref henry methyl addition to c3h6 to produce ic4h9
+
+! using curran 2006 not reverse fit (from RMG's NIST database)
+!OCC([CH2])C<=>[CH2]O+propene 9.59e11 0.77 30.7
+!OCC([CH2])C<=>CH3+OCC=C 9.59e11 0.77 30.7
+! no major difference between the two values
+
+! Reaction index: Chemkin #1; RMG #1
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 1.34936, dn = +|- 0.0419935, dEa = +|- 0.140192 kJ/mol
+aQOOHb <=> OH + trisub_epoxy                        2.966000e+08 1.061     6.971    
+
+! Reaction index: Chemkin #2; RMG #2
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 7.3278, dn = +|- 0.279134, dEa = +|- 0.931869 kJ/mol
+aQOOH[O] <=> H + ibut_peroxyacid                    3.993000e+03 3.005     6.840    
+
+! Reaction index: Chemkin #3; RMG #3
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 2.87397, dn = +|- 0.147956, dEa = +|- 0.493941 kJ/mol
+aQOOHg <=> OH + disub_c4ether                       1.481000e+12 0.100     14.733   
+
+! Reaction index: Chemkin #4; RMG #4
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 2.05392, dn = +|- 0.100873, dEa = +|- 0.336758 kJ/mol
+aQOOH[O] <=> performic_acid + ipropyl               3.002000e+11 0.774     3.925    
+
+! Reaction index: Chemkin #5; RMG #5
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 1.35354, dn = +|- 0.0424271, dEa = +|- 0.14164 kJ/mol
+aQOOHg <=> CH3 + aOOHbalkene                        4.168000e+12 0.392     32.360   
+
+! Reaction index: Chemkin #6; RMG #6
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 1.48466, dn = +|- 0.055385, dEa = +|- 0.184899 kJ/mol
+aQOOH[O] <=> HO2 + ibutanal                     6.646000e+11 0.418     12.390   
+
+! Reaction index: Chemkin #7; RMG #7
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 2.70582, dn = +|- 0.139507, dEa = +|- 0.465733 kJ/mol
+aRO2 <=> aadduct                                    4.152000e+09 0.926     10.091   
+
+! Reaction index: Chemkin #8; RMG #8
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 6.83466, dn = +|- 0.26937, dEa = +|- 0.899272 kJ/mol
+aRO2 <=> HO2 + ibutenol                             1.475000e+06 2.051     29.327   
+
+! Reaction index: Chemkin #9; RMG #9
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 1.08533, dn = +|- 0.0114757, dEa = +|- 0.0383108 kJ/mol
+aQOOHb <=> HO2 + ibutenol                           1.197000e+07 1.583     15.795   
+
+! Reaction index: Chemkin #10; RMG #10
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 3765.8, dn = +|- 1.15396, dEa = +|- 3.85241 kJ/mol
+aRO2 <=> aQOOHb                                     2.112000e-33 13.485    9.627    
+
+! Reaction index: Chemkin #11; RMG #11
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 15517.1, dn = +|- 1.35241, dEa = +|- 4.51492 kJ/mol
+aQOOHb <=> aQOOH[O]                                 9.229000e-44 16.273    10.237   
+
+! Reaction index: Chemkin #12; RMG #12
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 24.5639, dn = +|- 0.44866, dEa = +|- 1.49782 kJ/mol
+aRO2 <=> aQOOHg                                     7.719000e-07 5.309     16.677   
+
+! Reaction index: Chemkin #13; RMG #13
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 274.7, dn = +|- 0.787039, dEa = +|- 2.62747 kJ/mol
+aQOOHg <=> aQOOH[O]                                 6.699000e-18 8.564     5.962    
+
+! Reaction index: Chemkin #14; RMG #14
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 43.1864, dn = +|- 0.527739, dEa = +|- 1.76182 kJ/mol
+aQOOHg <=> OH + formic_acid + propene               1.867000e+06 2.318     18.654   
+
+! Reaction index: Chemkin #15; RMG #15
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 1.0537, dn = +|- 0.00733128, dEa = +|- 0.024475 kJ/mol
+aRO2 <=> aQOOH[O]                                   4.380000e+10 1.019     21.675   
+
+! Reaction index: Chemkin #16; RMG #16
+! Library reaction: Unclassified
+O2 + aR <=> aRO2                                    2.588000e+11 0.396     -1.157   
+
+! Reaction index: Chemkin #17; RMG #17
+! Library reaction: Unclassified
+HO2 + ibutanal <=> aadduct                      1.054000e+13 0.351     0.000    
+
+! Reaction index: Chemkin #18; RMG #18
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 154.154, dn = +|- 0.70607, dEa = +|- 2.35717 kJ/mol
+bRO2 <=> bQOOHg                                     9.771000e-29 12.039    15.061   
+
+! Reaction index: Chemkin #19; RMG #19
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 238.006, dn = +|- 0.766944, dEa = +|- 2.56039 kJ/mol
+bQOOHa <=> H2O + balkoxyketone                      4.399000e-03 4.213     8.434    
+
+! Reaction index: Chemkin #20; RMG #20
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 1.52802, dn = +|- 0.0594194, dEa = +|- 0.198368 kJ/mol
+bQOOHa <=> OH + trisub_epoxy                        5.436000e+11 0.282     6.768    
+
+! Reaction index: Chemkin #21; RMG #21
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 1.56186, dn = +|- 0.0624898, dEa = +|- 0.208618 kJ/mol
+bQOOHg <=> OH + disub_epoxy                         3.596000e+11 0.081     8.836    
+
+! Reaction index: Chemkin #22; RMG #22
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 1.1451, dn = +|- 0.0189895, dEa = +|- 0.0633951 kJ/mol
+bQOOHg <=> HO2 + galkene                            1.007000e+12 0.187     15.091   
+
+! Reaction index: Chemkin #23; RMG #23
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 2.71512, dn = +|- 0.139987, dEa = +|- 0.467337 kJ/mol
+bRO2 <=> HO2 + galkene                              1.810000e+06 2.166     26.834   
+
+! Reaction index: Chemkin #24; RMG #24
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 46.4164, dn = +|- 0.537848, dEa = +|- 1.79557 kJ/mol
+bRO2 <=> HO2 + ibutenol                             1.658000e+05 2.574     28.334   
+
+! Reaction index: Chemkin #25; RMG #25
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 1.37131, dn = +|- 0.0442549, dEa = +|- 0.147742 kJ/mol
+bQOOHa <=> HO2 + ibutenol                           1.700000e+11 0.550     12.855   
+
+! Reaction index: Chemkin #26; RMG #26
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 1169.36, dn = +|- 0.990051, dEa = +|- 3.30522 kJ/mol
+bRO2 <=> bQOOHa                                     2.328000e-25 11.077    10.799   
+
+! Reaction index: Chemkin #27; RMG #27
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 1.09809, dn = +|- 0.0131144, dEa = +|- 0.0437817 kJ/mol
+bRO2 <=> bQOOH[O]                                   2.595000e+14 -0.876    21.111   
+
+! Reaction index: Chemkin #28; RMG #28
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 1.13059, dn = +|- 0.0172025, dEa = +|- 0.0574293 kJ/mol
+bQOOH[O] <=> OH + CH2O + acetone                    6.579000e+13 -0.253    8.769    
+
+! Reaction index: Chemkin #29; RMG #29
+! Library reaction: Unclassified
+O2 + bR <=> bRO2                                    9.756000e+11 0.325     -0.417   
+
+! Reaction index: Chemkin #30; RMG #30
+! Library reaction: Unclassified
+O2 + gR <=> gRO2                                    6.865000e+16 -1.627    0.199    
+
+! Reaction index: Chemkin #31; RMG #31
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 1.41173, dn = +|- 0.0483256, dEa = +|- 0.161332 kJ/mol
+gRO2 <=> gQOOH[O]                                   6.263000e+06 1.056     20.371   
+
+! Reaction index: Chemkin #32; RMG #32
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 132.212, dn = +|- 0.684551, dEa = +|- 2.28533 kJ/mol
+gRO2 <=> gQOOHa                                     2.160000e-15 7.728     7.790    
+
+! Reaction index: Chemkin #33; RMG #33
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 21.0052, dn = +|- 0.426725, dEa = +|- 1.42459 kJ/mol
+gRO2 <=> gQOOHg                                     1.445000e-06 5.272     15.769   
+
+! Reaction index: Chemkin #34; RMG #34
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 1305.1, dn = +|- 1.00544, dEa = +|- 3.3566 kJ/mol
+gRO2 <=> gQOOHb                                     2.720000e-34 13.626    8.227    
+
+! Reaction index: Chemkin #35; RMG #35
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 14.8451, dn = +|- 0.378079, dEa = +|- 1.26219 kJ/mol
+gRO2 <=> HO2 + galkene                              1.077000e+02 3.277     26.393   
+
+! Reaction index: Chemkin #36; RMG #36
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 5.59495, dn = +|- 0.24132, dEa = +|- 0.80563 kJ/mol
+gQOOHb <=> HO2 + galkene                            3.106000e+13 0.110     15.867   
+
+! Reaction index: Chemkin #37; RMG #37
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 2.69294, dn = +|- 0.138838, dEa = +|- 0.4635 kJ/mol
+gQOOHa <=> H2O + galdoxy                            6.140000e+12 -0.418    10.211   
+
+! Reaction index: Chemkin #38; RMG #38
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 2.13726, dn = +|- 0.106447, dEa = +|- 0.355367 kJ/mol
+gQOOHa <=> OH + disub_c4ether                       5.356000e+14 -0.680    17.193   
+
+! Reaction index: Chemkin #39; RMG #39
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 2.9921, dn = +|- 0.153601, dEa = +|- 0.512787 kJ/mol
+gQOOHg <=> OH + monosub_c4ether                     1.975000e+08 1.017     17.624   
+
+! Reaction index: Chemkin #40; RMG #40
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 2.32138, dn = +|- 0.118029, dEa = +|- 0.394032 kJ/mol
+gQOOHb <=> OH + disub_epoxy                         7.589000e+12 0.191     9.988    
+
+! Reaction index: Chemkin #41; RMG #41
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 2.02161, dn = +|- 0.0986512, dEa = +|- 0.32934 kJ/mol
+gQOOHa <=> OH + CH2O + propene1ol                   9.532000e+12 -0.029    23.856   
+
+! Reaction index: Chemkin #42; RMG #42
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 4.96462, dn = +|- 0.224568, dEa = +|- 0.749705 kJ/mol
+gQOOHg <=> OH + CH2O + propene3ol                   1.645000e+08 1.680     24.230   
+
+! Reaction index: Chemkin #43; RMG #43
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 2.9951, dn = +|- 0.153742, dEa = +|- 0.513257 kJ/mol
+gQOOH[O] <=> CH2O + ipropylOOH                      1.369000e+18 -1.040    11.804   
+
+! Reaction index: Chemkin #44; RMG #44
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 4295.1, dn = +|- 1.17239, dEa = +|- 3.91394 kJ/mol
+gQOOH[O] <=> OH + galdol                            1.591000e-10 6.739     6.560    
+
+! Reaction index: Chemkin #45; RMG #45
+! Library reaction: Unclassified
+! Fitted to 20 data points; dA = *|/ 72.2817, dn = +|- 0.599923, dEa = +|- 2.0028 kJ/mol
+gQOOHa <=> OH + galdol                              3.650000e+06 1.663     18.229   
+
+END
+
