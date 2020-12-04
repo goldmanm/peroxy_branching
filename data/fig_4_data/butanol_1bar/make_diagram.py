@@ -88,7 +88,7 @@ for item in species_to_plot:
 
 
 other_conditions = {'HO2_frac': 1e-11}
-df_3d = simulate_branching_various_conditions_3D('../../mechanism/gamma_i_butanol_2020.cti',temperatures = temperatures,
+df_3d = simulate_branching_various_conditions_3D('../../mechanism/gamma_i_butanol.cti',temperatures = temperatures,
                                                                pressures = pressures,
                                                                NO_fracs = NO,
                                                                starting_alkyl_radical=starting_alkyl_radical,
