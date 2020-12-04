@@ -73,18 +73,18 @@ OOCC(CO)C
 NO2OCC(CO)C ![O-][N+](=O)OCC(CO)C
 OOCC(C(O[O])O)C
 OCC(O[O])(COO)C
-OOCC(C=O)C
-O=CC(C)C=O
+OOCC(CdO)C
+OdCC(C)CdO
 OOCC(CO)CO[O]
 
 !KHP
-O=CC(C)C(OO)O
-O=CC(CO)COO
-OCC(OO)(C=O)C
+OdCC(C)C(OO)O
+OdCC(CO)COO
+OCC(OO)(CdO)C
 
 ! super high-T decomposition
 [CH2]O
-OCC=C
+OCCdC
 
 N2
 END
@@ -379,14 +379,14 @@ OCC(O[O])(COO)C         H   9C   4O   5     G   100.000  5000.000  788.05      1
 ! group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cds-OdCsH) + other(R) + group(Os-OsCs) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-OsH)
 ! + gauche(Os(RR)) + other(R) + group(Od-Cd) + other(R)
 ! very similar to CurranPentane library
-OOCC(C=O)C              H   8C   4O   3     G   100.000  5000.000 1511.64      1
+OOCC(CdO)C              H   8C   4O   3     G   100.000  5000.000 1511.64      1
  1.44973690E+01 2.61550016E-02-1.07152390E-05 1.99574415E-09-1.39373461E-13    2
 -4.22322697E+04-4.36855217E+01 2.87352485E+00 5.69132849E-02-4.12367250E-05    3
  1.54564161E-08-2.36554728E-12-3.87180618E+04 1.71957045E+01                   4
  
 ! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(CsRRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(CsRRR)) + other(R) + group(Cds-
 ! OdCsH) + other(R) + group(Cds-OdCsH) + other(R) + group(Od-Cd) + other(R) + group(Od-Cd) + other(R)
-O=CC(C)C=O              H   6C   4O   2     G   100.000  5000.000 1063.44      1
+OdCC(C)CdO              H   6C   4O   2     G   100.000  5000.000 1063.44      1
  9.37717995E+00 2.34747726E-02-9.68862206E-06 1.83052377E-09-1.29827413E-13    2
 -4.04327996E+04-1.89584556E+01 3.25820402E+00 2.61593995E-02 1.52023607E-05    3
 -3.17516461E-08 1.19913158E-11-3.79817472E+04 1.63436547E+01                   4
@@ -403,7 +403,7 @@ OOCC(CO)CO[O]           H   9C   4O   5     G   100.000  5000.000  789.28      1
 ! Thermo group additivity estimation: group(Cs-(Cds-Od)CsCsH) + gauche(Cs(CsCsRR)) + other(R) + group(Cs-CsOsOsH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) +
 ! group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cds-OdCsH) + other(R) + group(Os-OsCs) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-CsH)
 ! + gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-OsH) + gauche(Os(RR)) + other(R) + group(Od-Cd) + other(R)
-O=CC(C)C(OO)O           H   8C   4O   4     G   100.000  5000.000 1103.40      1
+OdCC(C)C(OO)O           H   8C   4O   4     G   100.000  5000.000 1103.40      1
  1.31066696E+01 3.30896454E-02-1.51009791E-05 3.00728403E-09-2.19980875E-13    2
 -6.52387117E+04-3.18805454E+01 1.58464744E+00 7.48590148E-02-7.18839876E-05    3
  3.73153597E-08-7.99328372E-12-6.26960447E+04 2.48402177E+01                   4
@@ -411,7 +411,7 @@ O=CC(C)C(OO)O           H   8C   4O   4     G   100.000  5000.000 1103.40      1
 ! Thermo group additivity estimation: group(Cs-(Cds-Od)CsCsH) + gauche(Cs(CsCsRR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) +
 ! group(Cs-CsOsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cds-OdCsH) + other(R) + group(Os-OsCs) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-
 ! CsH) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-OsH) + gauche(Os(RR)) + other(R) + group(Od-Cd) + other(R)
-O=CC(CO)COO             H   8C   4O   4     G   100.000  5000.000 1079.26      1
+OdCC(CO)COO             H   8C   4O   4     G   100.000  5000.000 1079.26      1
  1.32379842E+01 3.18705561E-02-1.39196212E-05 2.74601603E-09-2.01372657E-13    2
 -6.02132070E+04-3.11843087E+01 2.98087596E+00 6.98857574E-02-6.67545244E-05    3
  3.53823990E-08-7.76124378E-12-5.79991817E+04 1.90827136E+01                   4
@@ -419,7 +419,7 @@ O=CC(CO)COO             H   8C   4O   4     G   100.000  5000.000 1079.26      1
 ! Thermo group additivity estimation: group(Cs-(Cds-Od)CsCsOs) + gauche(Cs(CsCsRR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) +
 ! group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cds-OdCsH) + other(R) + group(Os-OsCs) + gauche(Os(Cs(CsCsR)R)) + other(R) + group(Os-
 ! CsH) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Os-OsH) + gauche(Os(RR)) + other(R) + group(Od-Cd) + other(R)
-OCC(OO)(C=O)C           H   8C   4O   4     G   100.000  5000.000  989.05      1
+OCC(OO)(CdO)C           H   8C   4O   4     G   100.000  5000.000  989.05      1
  1.51108303E+01 2.96986950E-02-1.29334072E-05 2.49806392E-09-1.79254367E-13    2
 -6.23957999E+04-4.38956002E+01 4.23537448E-01 8.90979588E-02-1.03018232E-04    3
  6.32191728E-08-1.55275098E-11-5.94904902E+04 2.68004675E+01                   4
@@ -430,7 +430,7 @@ OCC(OO)(C=O)C           H   8C   4O   4     G   100.000  5000.000  989.05      1
 -4.03409640e+03-1.84691493e+00 4.47834367e+00-1.35070310e-03 2.78484980e-05    3
 -3.64869060e-08 1.47907450e-11-3.50072890e+03 3.30913500e+00-2.04462770e+03    4
 
-OCC=C                   C   3H   6O   1     G   200.000  6000.00  1000.00      1
+OCCdC                   C   3H   6O   1     G   200.000  6000.00  1000.00      1
  8.72477114e+00 1.63942712e-02-5.90852993e-06 9.53262253e-10-5.70318010e-14    2
 -1.90496618e+04-1.97198674e+01 3.15011905e+00 1.28538274e-02 4.28438434e-05    3
 -6.67818707e-08 2.80408237e-11-1.66413668e+04 1.35066359e+01-1.48710589e+04    4
@@ -467,24 +467,24 @@ NO+gRO2=NO2OCC(CO)C                                  1.000e+00 0.000     0.000
 
 ! decomposition of KHP pathway
 ! isomerization OOQOOH estimated from reaction R21 of Yao et al. JPCA 2017, 121 (16), 3001. doi:10.1021/acs.jpca.6b10818
- OOCC(C(O[O])O)C <=> OH + O=CC(C)C(OO)O           6.3e3 2.58 14.1    ! R21
- OOCC(CO)CO[O] <=> OH + O=CC(CO)COO               6.3e3 2.58 14.1    ! R21
- OCC(O[O])(COO)C <=> OH + OCC(OO)(C=O)C           4.46e-11 6.91 16.6 ! R12
+ OOCC(C(O[O])O)C <=> OH + OdCC(C)C(OO)O           6.3e3 2.58 14.1    ! R21
+ OOCC(CO)CO[O] <=> OH + OdCC(CO)COO               6.3e3 2.58 14.1    ! R21
+ OCC(O[O])(COO)C <=> OH + OCC(OO)(CdO)C           4.46e-11 6.91 16.6 ! R12
 
 ! hydrogen abstractions to form carbonyl compounds
 ! from atkinson 1997 for primary alkoxy radical reaction with O2
- O2 + gQOOH[O] <=> HO2 + OOCC(C=O)C                   3.6e+10 0.000 1.084
- O2 + galdoxy <=> HO2 + O=CC(C)C=O                   3.6e+10 0.000 1.084
+ O2 + gQOOH[O] <=> HO2 + OOCC(CdO)C                   3.6e+10 0.000 1.084
+ O2 + galdoxy <=> HO2 + OdCC(C)CdO                   3.6e+10 0.000 1.084
  O2 + [O]CC(CO)C <=> HO2 + galdol                     3.6e+10 0.000 1.084
 
 ! gamma-i-butanol decomposition
 ! taken from Sarathy butanol mechanism
 [CH2]O+propene<=>gR 9.45e+02 2.67 6.85 !ref henry ch3 addition to c3h6 to produce ic4h9 ;half the value of pre-exponential factor of methyl addition to propene
-CH3+OCC=C<=>gR 1.89e+03 2.67 6.85 !ref henry methyl addition to c3h6 to produce ic4h9
+CH3+OCCdC<=>gR 1.89e+03 2.67 6.85 !ref henry methyl addition to c3h6 to produce ic4h9
 
 ! using curran 2006 not reverse fit (from RMG's NIST database)
 !OCC([CH2])C<=>[CH2]O+propene 9.59e11 0.77 30.7
-!OCC([CH2])C<=>CH3+OCC=C 9.59e11 0.77 30.7
+!OCC([CH2])C<=>CH3+OCCdC 9.59e11 0.77 30.7
 ! no major difference between the two values
 
 ! Reaction index: Chemkin #1; RMG #1

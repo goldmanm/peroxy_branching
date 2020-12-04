@@ -635,7 +635,7 @@ trisub_epoxy
 13 H u0 p0 c0 {6,S}
 14 H u0 p0 c0 {2,S}
 
-O=CC(C)C=O
+OdCC(C)CdO
 1  O u0 p2 c0 {2,D}
 2  C u0 p0 c0 {1,D} {3,S} {7,S}
 3  C u0 p0 c0 {2,S} {4,S} {5,S} {8,S}
@@ -670,7 +670,7 @@ multiplicity 2
 17 H u0 p0 c0 {7,S}
 18 H u0 p0 c0 {7,S}
 
-OCC(OO)(C=O)C
+OCC(OO)(CdO)C
 1  O u0 p2 c0 {2,S} {9,S}
 2  C u0 p0 c0 {1,S} {3,S} {10,S} {11,S}
 3  C u0 p0 c0 {2,S} {4,S} {6,S} {8,S}
@@ -688,7 +688,7 @@ OCC(OO)(C=O)C
 15 H u0 p0 c0 {8,S}
 16 H u0 p0 c0 {8,S}
 
-O=CC(CO)COO
+OdCC(CO)COO
 1  O u0 p2 c0 {2,D}
 2  C u0 p0 c0 {1,D} {3,S} {9,S}
 3  C u0 p0 c0 {2,S} {4,S} {6,S} {10,S}
@@ -706,7 +706,7 @@ O=CC(CO)COO
 15 H u0 p0 c0 {6,S}
 16 H u0 p0 c0 {8,S}
 
-O=CC(C)C(OO)O
+OdCC(C)C(OO)O
 1  O u0 p2 c0 {2,D}
 2  C u0 p0 c0 {1,D} {3,S} {9,S}
 3  C u0 p0 c0 {2,S} {4,S} {5,S} {10,S}
@@ -733,7 +733,7 @@ multiplicity 2
 5 H u0 p0 c0 {4,S}
 
 
-OCC=C
+OCCdC
 1  O u0 p2 c0 {2,S} {5,S}
 2  C u0 p0 c0 {1,S} {3,S} {6,S} {7,S}
 3  C u0 p0 c0 {2,S} {4,D} {8,S}
@@ -885,7 +885,7 @@ N2
 1 N u0 p1 c0 {2,T}
 2 N u0 p1 c0 {1,T}
 
-OOCC(C=O)C
+OOCC(CdO)C
 1  O u0 p2 c0 {2,S} {8,S}
 2  O u0 p2 c0 {1,S} {3,S}
 3  C u0 p0 c0 {2,S} {4,S} {9,S} {10,S}
