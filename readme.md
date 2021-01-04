@@ -44,11 +44,11 @@ If you are generating figure 4, then you will have to run initial calculations. 
 ```
 cd /home/paper_repo/data/fig_4_data/butanol_1bar/
 python make_diagram.py
-cd ../butanol_1bar/
+cd ../butanol_1ppb/
 python make_diagram.py
 cd ../propane_1ppb/
 python make_diagram.py
-cd ../propane_1ppb/
+cd ../propane_1bar/
 python make_diagram.py
 ```
 
@@ -59,6 +59,6 @@ cd /home/paper_repo/code/
 jupyter notebook --ip 0.0.0.0 --port 8888 --no-browser --allow-root
 ```
 
-You can view the notebook in your web browser on the same device as the container with the URL `localhost:8888` or by copying the URL given in the terminal window and pasting it into a web browser.
+You can view the notebook in your web browser on the same device as the container with the URL `localhost:8888` or by copying the URL given in the terminal window and pasting it into a web browser. You can open the various notebooks and run the the code by going to Cell -> Run All. This will save the figures within the container. Plenty of online tutorials discuss more advanced usage of IPython notebooks and docker.
 
 
