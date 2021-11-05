@@ -4166,6 +4166,9 @@ reaction('ipropyloo + acetaldehyde <=> ipropylooh + acetyl', [2.800000e+12, 0.0,
 reaction('npropyloo + HO2 <=> npropylooh + O2', [1.750000e+10, 0.0, -3275.0])
 # HEALY ET AL C&F, 155: 451 461 (2008)
 
+# an alternative to the above reaction is from Jenkins 2019 and should be slightly more accurate at atmospheric conditions.
+#reaction('npropyloo + HO2 <=> npropylooh + O2', [8.407e+10, 0.0, -2583])
+
 # Reaction 469
 reaction('ipropyloo + HO2 <=> ipropylooh + O2', [1.750000e+10, 0.0, -3275.0])
 # HEALY ET AL C&F, 155: 451 461 (2008)
@@ -5567,19 +5570,19 @@ reaction('frag_5 <=> HCO + acetaldehyde', [2.120000e+14, -0.141, 1108.66])
 
 # Reaction 628
 pdep_arrhenius('NO + npropyloo <=> npropylONO2',
-               [(0.01, 'atm'), 9.336000e+29, -7.151, 3821.0],
-               [(0.099, 'atm'), 3.103000e+36, -9.195, 4525.0],
-               [(0.987, 'atm'), 1.230000e+39, -10.073, 3995.0],
-               [(9.869, 'atm'), 1.483000e+38, -9.857, 2667.0],
-               [(98.692, 'atm'), 1.432000e+35, -8.97, 1025.0])
+               [(0.01, 'atm'), 4.502e+23, -5.034,    2038],
+               [(0.099, 'atm'), 1.440e+34, -8.458,    3538],
+               [(0.987, 'atm'), 1.440e+34, -8.458,    3538],
+               [(9.869, 'atm'), 1.109e+44, -11.810,   4012],
+               [(98.692, 'atm'), 1.066e+40, -10.589,   2248])
 
 # Reaction 629
 pdep_arrhenius('NO + ipropyloo <=> ipropylONO2',
-               [(0.01, 'atm'), 9.336000e+29, -7.151, 3821.0],
-               [(0.099, 'atm'), 3.103000e+36, -9.195, 4525.0],
-               [(0.987, 'atm'), 1.230000e+39, -10.073, 3995.0],
-               [(9.869, 'atm'), 1.483000e+38, -9.857, 2667.0],
-               [(98.692, 'atm'), 1.432000e+35, -8.97, 1025.0])
+               [(0.01, 'atm'), 6.938e+23, -5.034,    2038],
+               [(0.099, 'atm'), 2.196e+34, -8.457,    3535],
+               [(0.987, 'atm'), 3.395e+33, -8.198,    2297],
+               [(9.869, 'atm'), 2.047e+43, -11.516,   3716],
+               [(98.692, 'atm'), 1.049e+37, -9.563,    1281])
 #  NO + RO2
 
 # Reaction 630
